@@ -10,7 +10,7 @@ The current run of the protocol has been done on Linux mint 17.1
 
 Tools : 
 
->> ns2.354
+>> ns2.354(Can be downloaded from https://sourceforge.net/projects/nsnam/files/allinone/ns-allinone-2.34/)
 >> nam 1.14
 
 Installation : 
@@ -29,12 +29,12 @@ STEP 5: Install ns2.34
 STEP 6: open file configure in /home/<your home foilder>/ns-allinone-2.34/otcl1.13/configure 
 	and make the following changes 
 	Linux*)
-	SHLIB_CFLAGS=î-fpicî
-	#SHLIB_LD=îld -sharedî       //disabled this line
-	SHLIB_LD=îgcc -sharedî       // add this line
-	SHLIB_SUFFIX=î.soî
-	DL_LIBS=î-ldlî
-	SHLD_FLAGS=îî
+	SHLIB_CFLAGS=‚Äù-fpic‚Äù
+	#SHLIB_LD=‚Äùld -shared‚Äù       //disabled this line
+	SHLIB_LD=‚Äùgcc -shared‚Äù       // add this line
+	SHLIB_SUFFIX=‚Äù.so‚Äù
+	DL_LIBS=‚Äù-ldl‚Äù
+	SHLD_FLAGS=‚Äù‚Äù
 	;;
 
 STEP 7: open file ranvar.cc in  /home/<your home foilder>/ns-allinone-2.34/ns-2.34/tools/ranvar.cc
